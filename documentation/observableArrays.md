@@ -1,6 +1,6 @@
 ---
 layout: documentation
-title: Arrays Observable
+title: Observable Arrays
 ---
 
 Se você quiser detectar e responder a alterações de um objeto, você usaria [observables](observables.html). Se você quiser detectar e responder a alterações de uma *coleção de coisas*, use um `observableArray`. Isto é útil em muitos cenários onde você está exibindo ou editando múltiplos valores e precisa que seções repetidas de sua UI apareça e desapareça quando itens são adicionados ou removidos.
@@ -56,7 +56,7 @@ A função `slice` do `observableArray` é equivalente à função `slice` nativ
 
 ### pop, push, shift, unshift, reverse, sort, splice
 
-All of these functions are equivalent to running the native JavaScript array functions on the underlying array, and then notifying listeners about the change:
+Todas essas funções são equivalentes à executar funções nativas do JavaScript no array, e notifcar os listeners sobre as alterações:
 
  * `myObservableArray.push('Some new value')` adiciona um novo item no final do array
  * `myObservableArray.pop()` remove o último valor do array e retorna-o
