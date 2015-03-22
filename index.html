@@ -1,15 +1,128 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Knockout.js Brasil</title>
-    <meta charset="utf-8">
-    <style>
-        *{margin:0;padding:0;}
-        body {text-align:center; padding:100px 0 0; font-family:arial; line-height:40px;}
-    </style>
-</head>
-<body>
-    <h1>Knockout.js Brasil</h1>
-    <h3>Tradução do Knockout.js</h3>
-</body>
-</html>
+---
+layout: default
+title: Home
+mainmenukey: home
+canonicalUrl: /
+---
+<div id="masthead">
+    <div id="slogan">
+        <p class="engraved">Simplifique UIs JavaScript dinâmicas com o padrão Model-View-View Model (MVVM)</p>
+        {% include download-button.html %}
+    </div>
+    <img src="img/ko-logo.png" />
+</div>
+<div class="clear vspace-small"></div>
+
+<div class="sticker fullWidth">
+    <div class="stickerHeading titillium">
+        <h1>Conceitos chave</h1>
+    </div>
+    <ul id="introBadges">
+        <li>
+            <img src="img/feature-icons/declarative-bindings.png" />					
+            <p class="titillium heading">Bindings declarativos</p>
+            <p>Associar facilmente elementos DOM com dados do model usando uma sintaxe legível e concisa</p>
+        </li>
+        <li>
+            <img src="img/feature-icons/automatic-refreshing.png" />					
+            <p class="titillium heading">Atualização automática da UI</p>
+            <p>Quando o estado dos dados do seu model são alterados, sua UI atualiza automaticamente</p>						
+        </li>
+        <li>
+            <img src="img/feature-icons/dependency-tracking.png" />					
+            <p class="titillium heading">Dependency Tracking</p>
+            <p>Configura implicitamente correntes de relações entre model data, para transformar e combinar</p>
+        </li>
+        <li>
+            <img src="img/feature-icons/templating.png" />					
+            <p class="titillium heading">Templating</p>
+            <p>Gera rapidamente UIs sofisticadas e aninhadas como uma função para o seu model data</p>
+        </li>					
+    </ul>
+    <div class="clear"></div>
+</div>
+
+<div class="floatLeft">
+    <div class="sticker" style="width: 380px">
+        <div class="stickerHeading titillium">
+            <h1>Mais recursos</h1>
+        </div>
+        <ul class="tickIcons">
+            <li>Free, open source (<a href="http://www.opensource.org/licenses/mit-license.php">MIT license</a>)</li>
+            <li>JavaScript puro - funciona com qualquer framework web</li>
+            <li>
+                Pequeno & leve - 54kb minificado
+                <p class="smallprint">... reduz a 20kb quando usado compressão HTTP</p>
+            </li>
+            <li>Sem dependências</li>            
+            <li>
+                Suporta todos os navegadores, até os antigos
+                <p class="smallprint">IE 6+, Firefox 3.5+, Chrome, Opera, Safari (desktop/mobile)</p>
+            </li>
+            <li>
+                Totalmente documentado
+                <p class="smallprint">API docs, live examples e tutoriais interativos incluído</p>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="sticker" style="width: 380px">
+        <div class="stickerHeading titillium">
+            <h1>Comece</h1>
+        </div>
+        <ul class="stickerList">
+            <li>
+                <a href="http://learn.knockoutjs.com">Tutoriais interativos</a>
+                <p class="smallprint">Aprenda de forma fácil com o editor de código no navegador</p>
+            </li>
+            <li>
+                <a href="http://channel9.msdn.com/Events/MIX/MIX11/FRM08">20 minutos de vídeo demonstrativo</a>
+                <p>
+                    <a href="http://channel9.msdn.com/Events/MIX/MIX11/FRM08">
+                        <img src="img/mixVideo.jpg" width="320" height="145" style="display: block; margin: 1em auto"/>
+                    </a>
+                </p>
+                <p class="smallprint">Pegue um café e assista essa sessão introdutória em ritmo acelerado, filmada na conferência 2011 MIX.</p>
+            </li>
+            <li>
+                <a href="documentation/introduction.html">Introdução ao Knockout</a>
+                <p class="smallprint">Tutorial, benefícios, comparações com outros framworks</p>
+            </li>
+            <li>
+                <a href="http://www.pluralsight-training.net/microsoft/Courses/TableOfContents?courseName=knockout-mvvm">Curso de treinmaneto PluralSight Knockout.js</a>
+                <p class="smallprint">Quase 5 horas de conteúdo de vídeo online por John Papa (<a href="http://johnpapa.net/komvvm">Mais Informação</a>)</p>
+            </li>
+            <li>
+                <a href="documentation/observables.html#mvvm_and_view_models">Introdução ao padrão Model-View-View Model</a>
+                <p class="smallprint">How KO enables it with observables and computed properties</p>
+            </li>
+            <li>
+                <a href="examples/">Mais live examples</a>
+            </li>           	
+            <li>
+                <a href="documentation/links.html">Links Externos e posts do blog</a>
+            </li>        	
+            <li>
+                <a href="http://github.com/SteveSanderson/knockout/">Código fonte no Github</a>
+            </li>
+        </ul>
+    </div>    
+</div>	
+
+<div class="sticker floatRight" style="width:494px">
+    <div class="stickerHeading titillium">
+        <h1><b>Novo:</b> Tutoriais interativos</h1>
+    </div>
+	<p>
+        Comece com knockout.js rapidamente, aprende a construir <em>aplicações single-page</em>, <em>bindings customizados</em> e mais
+		com <a href="http://learn.knockoutjs.com">esses tutoriais interativos</a>.
+	</p>
+</div>		
+        
+<div class="sticker floatRight homepageExample" style="width:494px">
+    <div class="stickerHeading titillium">
+        <h1>Live example</h1>
+    </div>
+    {% include homepage-example.html %}
+    <p>Encapsulando dado e compotamento em uma view model, você tem fundação limpa e extensível no qual para construir UIs sofisticadas sem se perder em um emaranhado de event handlers e atualizações manuais de DOM.</p>
+</div>
